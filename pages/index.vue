@@ -2,8 +2,8 @@
   <div>
     <div class="kv_wrapper kv">
       <picture>
-        <source srcset="/image/kv/KV.jpg"  media="(min-width: 767px)">
-          <img src="/image/kv/KV_sp.jpg" alt="" />
+        <source srcset="~/assets/image/kv/KV.jpg"  media="(min-width: 767px)">
+          <img src="~/assets/image/kv/KV_sp.jpg" alt="" />
       </picture>
       <h1 class="kv-text">プロモーションをポップに、
         <br>コンテンツからカルチャーへ
@@ -40,8 +40,8 @@
           <div class="section_solution-content-block sp_bg-wh add-top">
             <div class="sp_flex_box">
               <picture class="image image_1">
-                <source srcset="/image/solution/solution1.svg"  media="(min-width: 767px)">
-                  <img src="/image/solution/global.svg" alt="" />
+                <source srcset="~/assets/image/solution/solution1.svg"  media="(min-width: 767px)">
+                  <img src="~/assets/image/solution/global.svg" alt="" />
               </picture>
               <p class="block_title">MEDIA</p>
             </div>
@@ -50,7 +50,7 @@
           <span></span>
           <div class="section_solution-content-block">
             <div class="sp_flex_box">
-              <img class="image image_2" src="/image/solution/solution2.svg" alt="">
+              <img class="image image_2" src="~/assets/image/solution/solution2.svg" alt="">
               <p class="block_title">CREATIVE</p>
             </div>
             <p class="block_detail">
@@ -63,8 +63,8 @@
           <div class="section_solution-content-block sp_bg-wh">
             <div class="sp_flex_box">
               <picture class="image image_3">
-                <source srcset="/image/solution/solution3.svg"  media="(min-width: 767px)">
-                  <img src="/image/solution/speaker.svg" alt="" />
+                <source srcset="~/assets/image/solution/solution3.svg"  media="(min-width: 767px)">
+                  <img src="~/assets/image/solution/speaker.svg" alt="" />
               </picture>
               <p class="block_title">PLANNING</p>
             </div>
@@ -262,29 +262,29 @@
         </div>
         <div class="flex_inner">
           <div class="flow_content">
-            <img src="/image/flow/flow1.svg" alt=""/>
+            <img src="~/assets/image/flow/flow1.svg" alt=""/>
             <p class="title">01.ヒアリング</p>
             <p class="detail">まずはヒアリングをすることで悩みが何なのか、何を目標とすべきかを明確にします。</p>
           </div>
-          <img class="arrow" src="/image/flow/arrow.svg" alt=""/>
+          <img class="arrow" src="~/assets/image/flow/arrow.svg" alt=""/>
           <div class="flow_content">
-            <img src="/image/flow/flow2.svg" alt=""/>
+            <img src="~/assets/image/flow/flow2.svg" alt=""/>
             <p class="title">02.企画・立案・制作進行</p>
             <p class="detail">
               市場リサーチ、クリエイターのご提案・キャスティング、コンテンツ企画、制作進行などのプロモーション設計を一貫して行います。
             </p>
           </div>
-          <img class="arrow" src="/image/flow/arrow.svg" alt=""/>
+          <img class="arrow" src="~/assets/image/flow/arrow.svg" alt=""/>
           <div class="flow_content">
-            <img src="/image/flow/flow3.svg" alt=""/>
+            <img src="~/assets/image/flow/flow3.svg" alt=""/>
             <p class="title">03.プラン運用</p>
             <p class="detail">
               プロモーション企画の実施、各種SNSやWebメディアの運用による企画の拡散、効果測定による最適化などを行います。
             </p>
           </div>
-          <img class="arrow" src="/image/flow/arrow.svg" alt=""/>
+          <img class="arrow" src="~/assets/image/flow/arrow.svg" alt=""/>
           <div class="flow_content">
-            <img src="/image/flow/flow4.svg" alt=""/>
+            <img src="~/assets/image/flow/flow4.svg" alt=""/>
             <p class="title">04.振り返り</p>
             <p class="detail">新たに見つかった課題の洗い出しや次回プロモーションプランに向けた振り返りをいたします。</p>
           </div>
@@ -382,7 +382,7 @@
           </p>
           <a target="_blank" href="http://kai-you.co.jp/recruit/" class="lp_button is-pc">募集職種をみる</a>
         </div>
-        <img class="bg_image" src="/image/recruit/recruit.jpg" alt="" />
+        <img class="bg_image" src="~/assets/image/recruit/recruit.jpg" alt="" />
         <a target="_blank" href="http://kai-you.co.jp/recruit/" class="lp_button is-sp">募集職種をみる</a>
         <div class="bg_content"></div>
       </div>

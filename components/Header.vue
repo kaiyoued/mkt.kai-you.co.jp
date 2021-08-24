@@ -1,7 +1,7 @@
 <template>
   <header>
     <a href="http://mkt.kai-you.co.jp">
-      <img src="/image/logo.svg" alt="" />
+      <img src="~/assets/image/logo.svg" alt="" />
     </a>
 
     <ul>
