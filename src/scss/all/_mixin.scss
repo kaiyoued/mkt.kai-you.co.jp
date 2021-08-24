@@ -1,0 +1,133 @@
+//レスポンシブ（min）
+$sm:460px;
+$md:767px;
+$lg:1023px;
+$smt:460;
+$mdt:767;
+$lgt:1023;
+@mixin sp ($spWidth: 480px) {
+  @media screen and (max-width: $spWidth) {
+    @content;
+  }
+}
+
+// レスポンシブ(max)
+@mixin pc ($pcWidth: 1440px){
+  @media screen and (min-width: $pcWidth) {
+    @content;
+  }
+}
+
+.in_#{$smt} {
+  display: none;
+  @include sp(#{$sm}) {
+    display: block;
+  }
+}
+
+.in_#{$mdt} {
+  display: none;
+  @include sp(#{$md}) {
+    display: block;
+  }
+}
+
+.in_#{$lgt} {
+  display: none;
+  @include sp(#{$lg}) {
+    display: block;
+  }
+}
+
+.out_#{$smt} {
+  display: block;
+  @include sp(#{$sm}) {
+    display: none;
+  }
+}
+
+.out_#{$mdt} {
+  display: block;
+  @include sp(#{$md}) {
+    display: none;
+  }
+}
+
+.out_#{$lgt} {
+  display: block;
+  @include sp(#{$lg}) {
+    display: none;
+  }
+}
+
+
+@mixin spRange($min,$max) {
+  @media screen and (min-width:$min) and (max-width:$max) {
+    @content
+  };
+}
+
+// flex
+@mixin flex($Justify:center, $align:center) {
+  display : -webkit-box;     /* old Android */
+  display: -moz-box;         /* Firefox */
+  display : -webkit-flex;    /* Safari etc. */
+  display : -ms-flexbox;     /* IE10        */
+  display: flex;
+  justify-content: $Justify;
+  align-items: $align;
+}
+
+//sectionフォーマット
+@mixin section() {
+  max-width: 1024px;
+  width: calc(100% - 160px);
+  margin: 0 auto;
+
+  @include sp($lg) {
+    width: calc(100% - 80px);
+  }
+
+  @include sp($md) {
+    width: calc(100% - 32px);
+  }
+}
+
+@mixin fontSize($font : 16px){
+  font-size: calc( #{$font} /1.33);
+
+  @include pc(1990){
+    font-size: $font;
+  }
+}
+
+@mixin link($color: $mainBlack, $visited: $mainBlack, $hover: $mainBlack, $active: $mainBlack) {
+  color: $color;
+  text-decoration: none;
+  &:link {
+    color: $color ;
+  }
+  &:visited {
+    color: $visited ;
+  }
+  &:hover {
+    color: $hover ;
+    transition: 0.3s;
+  }
+  &:active {
+    color: $active ;
+  }
+}
+@mixin backgroundImageAfterHover($originSmageSize) {
+  background-size:auto $originSmageSize * 1.1;
+  transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
+}
+
+@mixin backgroundImageBeforeHover($originSmageSize) {
+  background-size: auto $originSmageSize;
+  background-position: center;
+  height: $originSmageSize;
+}
