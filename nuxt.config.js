@@ -53,6 +53,5 @@ export default {
   target: 'static',
 
   router: {
-    base: '/mkt.kai-you.co.jp/'
   },
 }
