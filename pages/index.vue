@@ -82,12 +82,11 @@
           <h2>WORKS</h2>
         </div>
         <div class="section_content section_works-content">
-          <a v-for="work in works" :key="work.id" class="work_link" href="http://kai-you.co.jp/works/%e5%8c%97%e4%b9%9d%e5%b7%9e%e5%b8%82-%e7%a7%bb%e4%bd%8f%e4%bf%83%e9%80%b2pr%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88-2/" :style="`background-image:url(${work.thumbnail_url})`">
-           <p v-if="getCat(work) !== ''" class="cat">{{ getCat(work) }}</p>
-            <div class="hover_active">
-              <p>CL:{{ work.client.value }}</p>
-            </div>
-          </a>
+          <WorkListItem
+            v-for="work in works"
+            :key="work.id"
+            :work="work"
+          />
         </div>
         <a target="_blank" href="http://kai-you.co.jp/works/" class="lp_button">制作実績をもっとみる</a>
       </div>
@@ -230,30 +229,25 @@
 
 <script>
 import axios from 'axios'
+import WorkListItem from '../components/WorkListItem.vue'
 
 export default {
   name: 'IndexPage',
-    data(){
-      return{
+  compomemts: {
+    WorkListItem
+  },
+  data() {
+    return{
       works:[],
-      image_src: "https://dnsk.jp/wp/wp-content/uploads/2018/05/blog_01.jpg",
-      }
-    },
-
- async beforeMount() {
-    const resp = await axios.get('https://kai-you.co.jp/wp-json/wp/v2/works?per_page=28&order=desc&publish')
-    this.works = resp.data 
-  }  
-
-  ,methods:{
-    getCat(work){
-        const resp = work.list_names.filter(list => list.name !== 'KAI-YOU Marketing') 
-                                    .filter(list => list.name !== 'MILL') 
-                                    .filter(list => list.name !== 'KAI-YOU Medium Tech.') 
-        const response = resp.map(item => item['name']) 
-      return response.join(' ')
     }
+  },
+
+  async beforeMount() {
+    const PER_PAGE = 28 // 最新から28件を取得
+    const KAI_YOU_MARKETING_LIST_ID = 8 // KAI-YOU Marketing のみ絞ってworksを取得
+
+    const resp = await axios.get(`https://kai-you.co.jp/wp-json/wp/v2/works?per_page=${PER_PAGE}&order=desc&publish&list=${KAI_YOU_MARKETING_LIST_ID}`)
+    this.works = resp.data
   }
 }
 </script>
-
