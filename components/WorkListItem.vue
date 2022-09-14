@@ -32,7 +32,7 @@ export default {
       return work.list_names
         .map(l => l.name)
         .filter(name => !notDisplayingListNames.includes(name))
-        .join(' ')
+        .join('　')
     }
   }
 }
