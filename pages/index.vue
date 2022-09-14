@@ -82,10 +82,172 @@
           <h2>WORKS</h2>
         </div>
         <div class="section_content section_works-content">
-          <a v-for="work in works" :key="work.id" class="work_link" href="http://kai-you.co.jp/works/%e5%8c%97%e4%b9%9d%e5%b7%9e%e5%b8%82-%e7%a7%bb%e4%bd%8f%e4%bf%83%e9%80%b2pr%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88-2/" :style="`background-image:url(${work.thumbnail_url})`">
-           <p v-if="getCat(work) !== ''" class="cat">{{ getCat(work) }}</p>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e5%8c%97%e4%b9%9d%e5%b7%9e%e5%b8%82-%e7%a7%bb%e4%bd%8f%e4%bf%83%e9%80%b2pr%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88-2/" style="background-image:url('./image/works/works1.jpg')">
+            <p class="cat">MEDIA　CREATIVE　PLANNING</p>
             <div class="hover_active">
-              <p>CL:{{ work.client.value }}</p>
+              <p>CL:北九州市</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e5%8c%97%e4%b9%9d%e5%b7%9e%e5%b8%82-%e7%a7%bb%e4%bd%8f%e4%bf%83%e9%80%b2pr%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88/" style="background-image:url('./image/works/works2.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:北九州市</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e3%80%8e%e3%83%95%e3%82%a1%e3%82%a4%e3%83%8a%e3%83%ab%e3%83%95%e3%82%a1%e3%83%b3%e3%82%bf%e3%82%b8%e3%83%bcxiv%e3%80%8f%e3%83%95%e3%83%aa%e3%83%bc%e3%83%88%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%ab/" style="background-image:url('./image/works/works3.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:株式会社スクウェア・エニックス</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e5%8c%97%e4%b9%9d%e5%b7%9e%e5%b8%82-%e7%a7%bb%e4%bd%8f%e4%bf%83%e9%80%b2pr%e3%83%9d%e3%82%b9%e3%82%bf%e3%83%bc/" style="background-image:url('./image/works/works4.jpg')">
+            <p class="cat">MEDIA　CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:北九州市</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/guiano%e3%80%8c%e9%80%8f%e9%81%8e%e5%a4%8f-feat-%e7%90%86%e8%8a%bd%e3%80%8d/" style="background-image:url('./image/works/works5.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:北九州市</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e3%80%8e%e3%83%87%e3%82%b8%e3%83%a2%e3%83%b3%e3%82%a2%e3%83%89%e3%83%99%e3%83%b3%e3%83%81%e3%83%a3%e3%83%bclast-evolution%e7%b5%86%e3%80%8fx%e3%80%8evanquish%e3%80%8f/" style="background-image:url('./image/works/works6.jpg')">
+            <p class="cat">MEDIA　CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:株式会社せーの</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be%e3%83%ab%e3%83%9f%e3%82%ab-tvcm/" style="background-image:url('./image/works/works7.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:株式会社ルミカ</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%E3%81%95%E3%81%AA%E3%82%8A-%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%88/" style="background-image:url('./image/works/works8.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:株式会社A-Sketch</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/teng-gang-starr%e3%80%8cdodemoii-feat-masayoshi-iimori%e3%80%8d/" style="background-image:url('./image/works/works9.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:TGS / bpm tokyo</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/nhk-e%e3%83%86%e3%83%ac-%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%80%e3%82%a4/" style="background-image:url('./image/works/works10.jpg')">
+            <p class="cat">PLANNING</p>
+            <div class="hover_active">
+              <p>CL:株式会社アマゾンラテルナ</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e3%80%8edevilman-crybaby%e3%80%8fweb%e3%83%97%e3%83%ad%e3%83%a2%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3/" style="background-image:url('./image/works/works11.jpg')">
+            <p class="cat">MEDIA　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:Netflix株式会社</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%E3%83%91%E3%83%8E%E3%83%A9%E3%83%9E%E3%83%91%E3%83%8A%E3%83%9E%E3%82%BF%E3%82%A6%E3%83%B3%E3%80%8Cuji%E3%80%8D%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88/" style="background-image:url('./image/works/works12.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:株式会社A-Sketch / 株式会社FACT</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/a-sketch-%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88/" style="background-image:url('./image/works/works13.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:株式会社A-Sketch</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e9%9b%bb%e6%b3%a2%e5%b0%91%e5%a5%b3%e3%80%8ea-bone-feat-jinmenusagi-%ef%bc%86-niha-c%e3%80%8f/" style="background-image:url('./image/works/works14.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:株式会社ソニー・ミュージックレーベルズ</p>
+            </div>
+          </a>
+          <a class="work_link" href="http://kai-you.co.jp/works/%e3%83%86%e3%83%ac%e3%83%93%e6%9d%b1%e4%ba%ac-%e9%9d%92%e6%98%a5%ef%bc%81livechannel/" style="background-image:url('./image/works/works15.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:株式会社Donuts</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/mvno-lab-nuro%e3%83%a2%e3%83%90%e3%82%a4%e3%83%ab/" style="background-image:url('./image/works/works16.jpg')">
+            <p class="cat">MEDIA</p>
+            <div class="hover_active">
+              <p>CL:ソニーネットワークコミュニケーションズ株式会社</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/mvno-lab-so-net%e3%81%ae%e3%83%a2%e3%83%90%e3%82%a4%e3%83%ab%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9/" style="background-image:url('./image/works/works17.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:ソニーネットワークコミュニケーションズ株式会社</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/capcom-x-kai-you-%e3%82%aa%e3%83%aa%e3%82%b8%e3%83%8a%e3%83%ab%e3%83%96%e3%83%83%e3%82%af%e3%83%ac%e3%83%83%e3%83%88%e3%80%8ecapcom-ing%e3%80%8f/" style="background-image:url('./image/works/works18.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:CAPCOM ING</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/livetune-official-web-site/" style="background-image:url('./image/works/works19.jpg')">
+            <p class="cat">MEDIA</p>
+            <div class="hover_active">
+              <p>CL:livetune+</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e4%b8%80%e8%88%ac%e7%a4%be%e5%9b%a3%e6%b3%95%e4%ba%ba-jmag%e3%82%af%e3%83%aa%e3%82%a8%e3%82%a4%e3%82%bf%e3%83%bc%e3%82%ba%e5%8d%94%e4%bc%9a-%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88/" style="background-image:url('./image/works/works20.jpg')">
+            <p class="cat">MEDIA　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:東洋美術学校</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e3%83%a4%e3%83%95%e3%83%bc%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be-csr%e3%82%b5%e3%82%a4%e3%83%88/" style="background-image:url('./image/works/works21.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:ヤフー株式会社</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e3%83%a6%e3%82%ab%e3%82%a4%e5%b7%a5%e5%ad%a6-yukai-engineering/" style="background-image:url('./image/works/works22.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:ユカイ工学株式会社</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e6%9d%b1%e6%b4%8b%e7%be%8e%e8%a1%93%e5%ad%a6%e6%a0%a1-tobi-open-days/" style="background-image:url('./image/works/works23.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:東洋美術学校</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e3%83%94%e3%82%af%e3%82%b7%e3%83%96%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%be-%e6%8e%a1%e7%94%a8%e3%82%b5%e3%82%a4%e3%83%88/" style="background-image:url('./image/works/works24.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:ピクシブ株式会社</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e3%83%94%e3%83%b3%e3%83%9d%e3%83%b3-the-animation/" style="background-image:url('./image/works/works25.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:株式会社アニプレックス</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/bis%e3%80%8e%e3%81%86%e3%82%8a%e3%82%83%e3%81%8a%e3%81%84%e3%80%8f%e6%84%9b%e3%81%97%e3%81%ae%e6%84%9bdoll-box%e3%82%bb%e3%83%83%e3%83%88/" style="background-image:url('./image/works/works26.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:エイベックス・ミュージック・クリエイティヴ株式会社</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e3%81%98%e3%82%93%e3%80%8edazedays%e3%80%8f%e5%8f%8e%e9%8c%b2%e3%80%8cchronological%e3%80%8d/" style="background-image:url('./image/works/works27.jpg')">
+            <p class="cat">CREATIVE　PLANNING</p>
+            <div class="hover_active">
+              <p>CL:株式会社ウルトラシープ</p>
+            </div>
+          </a>
+          <a class="work_link is_pc" href="http://kai-you.co.jp/works/%e3%80%8e%e6%94%bb%e6%ae%bb%e6%a9%9f%e5%8b%95%e9%9a%8aarise-ghost-in-the-shell-%e3%80%8f/" style="background-image:url('./image/works/works28.jpg')">
+            <p class="cat">CREATIVE</p>
+            <div class="hover_active">
+              <p>CL:東宝</p>
             </div>
           </a>
         </div>
@@ -229,32 +391,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+import Vue from 'vue'
 
-export default {
-  name: 'IndexPage',
-    data(){
-      return{
-      works:[],
-      image_src: "https://dnsk.jp/wp/wp-content/uploads/2018/05/blog_01.jpg",
-      }
-    },
-
- async beforeMount() {
-    const resp = await axios.get('https://kai-you.co.jp/wp-json/wp/v2/works?per_page=28&order=desc&publish')
-    this.works = resp.data 
-  }  
-
-  ,methods:{
-    getCat(work){
-        const resp = work.list_names.filter(list => list.name !== 'KAI-YOU Marketing') 
-                                    .filter(list => list.name !== 'MILL') 
-                                    .filter(list => list.name !== 'KAI-YOU Medium Tech.') 
-        const response = resp.map(item => item['name']) 
-      return response.join(' ')
-    }
-  }
-}
+export default Vue.extend({
+});
 </script>
-
-
