@@ -45,7 +45,7 @@
               </picture>
               <p class="block_title">MEDIA</p>
             </div>
-            <p class="block_detail">KAI-YOU.netをはじめとした各種Webメディアでのプロモーションのご提案、進行管理を行います。また、Webメディアの運用なども随時承っております。</p>
+            <p class="block_detail">KAI-YOUをはじめとした各種Webメディアでのプロモーションのご提案、進行管理を行います。また、Webメディアの運用なども随時承っております。</p>
           </div>
           <span></span>
           <div class="section_solution-content-block">
@@ -184,8 +184,8 @@
                 <label>KAI-YOU各種サービスと協業したい</label>
               </div>
               <div class="radio_inner">
-                <input type="radio" name="entry.583315910" required="required" value="Webメディア『KAI-YOU.net』に広告を出稿したい">
-                <label>Webメディア『KAI-YOU.net』に広告を出稿したい</label>
+                <input type="radio" name="entry.583315910" required="required" value="Webメディア『KAI-YOU』に広告を出稿したい">
+                <label>Webメディア『KAI-YOU』に広告を出稿したい</label>
               </div>
               <div class="radio_inner">
                 <input type="radio" name="entry.583315910" required="required" value="情報収集">
